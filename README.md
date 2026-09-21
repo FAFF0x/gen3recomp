@@ -1,0 +1,793 @@
+[README_GEN3.md](https://github.com/user-attachments/files/32456353/README_GEN3.md)
+# Pokémon Recomp — Gen 3 Mods
+
+A collection of mods for **Pokémon FireRed / Pokémon Recomp Gen 3**, designed to make the game more modern, accessible, practical, and content-rich.
+
+All mods are available in the repository:
+
+**[github.com/FAFF0x/gen3recomp](https://github.com/FAFF0x/gen3recomp)**
+
+---
+
+## Table of Contents
+
+- [Quality of Life Mods](#quality-of-life-mods)
+  - [Advanced Box System](#advanced-box-system)
+  - [Area DexNav](#area-dexnav)
+  - [DV/EV Editor](#dvev-editor)
+  - [EXP Share Modes](#exp-share-modes)
+  - [Free Master Ball + Rare Candy + Evolution Items + Max Repel](#free-master-ball)
+  - [HM Anywhere](#hm-anywhere)
+  - [Item Shortcut](#item-shortcut)
+  - [Modern Bag](#modern-bag)
+  - [Move Learn Stats](#move-learn-stats)
+  - [Moves Manager](#moves-manager)
+  - [Nickname Changer](#nickname-changer)
+  - [Pokédex Plus](#pokédex-plus)
+  - [PokéCenter Max Happiness](#pokécenter-max-happiness)
+  - [Trade Evolution Fix](#trade-evolution-fix)
+  - [Repel Reuse](#repel-reuse)
+  - [Reusable Machines](#reusable-machines)
+  - [Stable Menu Navigation - Gen 3](#stable-menu-navigation---gen-3)
+  - [Summon](#summon)
+  - [Universal Free TM Shop](#universal-free-tm-shop)
+  - [disable_help_LR](#disable_help_lr)
+- [ART Mods](#art-mods)
+  - [Modern Battle UI](#modern-battle-ui)
+  - [Modern UI Gen 3](#modern-ui-gen-3)
+- [Debugging](#debugging)
+  - [Performance Monitor](#performance-monitor)
+
+---
+
+# Quality of Life Mods
+
+---
+
+## Advanced Box System
+
+
+Expands the original PC Box interface with faster navigation, direct swapping, and improved Box management.
+
+### WITHDRAW
+
+While browsing stored Pokémon:
+
+- press **Left / Right** to switch instantly between **BOX 1 and BOX 14**;
+- Box switching remains available even when the current Box is empty;
+- you can continue moving between Boxes without returning to the main PC menu.
+
+### DEPOSIT
+
+While viewing the party:
+
+- remain directly in the party list;
+- press **Left / Right** to change the destination Box in real time;
+- if the selected Box is full, you can immediately move to the next Box without leaving the menu.
+
+### SWAP POKéMON
+
+Adds a dedicated **SWAP POKéMON** option.
+
+To swap Pokémon:
+
+1. select a Pokémon stored in a Box;
+2. select a Pokémon in the party;
+3. the two Pokémon are exchanged directly.
+
+The swap system also works when:
+
+- the party already contains **6 Pokémon**;
+- the party contains only **1 Pokémon**.
+
+Because the total number of party members does not change, the normal party-size restrictions do not prevent the swap.
+
+### Quick SWAP
+
+A direct **SWAP** action is also available inside both:
+
+- **WITHDRAW**
+- **DEPOSIT**
+
+This allows Pokémon to be exchanged without returning to the main PC menu.
+
+### RELEASE
+
+The **RELEASE** menu also supports **Left / Right** Box switching, allowing you to move between Boxes without leaving the release screen.
+
+---
+
+## Area DexNav
+
+Press **SELECT** while exploring the overworld to start an encounter with an uncaught Pokémon from the current area's real encounter table.
+
+---
+
+## DV/EV Editor
+
+Adds a **DV/EV** option to each party Pokémon's submenu, allowing its hidden stat values to be edited outside of battle.
+
+> In Generation III, the values traditionally called DVs in earlier generations correspond to **IVs**.
+
+### DV / IV Page
+
+Allows you to edit all six individual values:
+
+- HP;
+- Attack;
+- Defense;
+- Speed;
+- Special Attack;
+- Special Defense.
+
+Each IV can be adjusted from `0` to `31`.
+
+### EV Page
+
+Allows the six EV values to be edited individually:
+
+- HP;
+- Attack;
+- Defense;
+- Speed;
+- Special Attack;
+- Special Defense.
+
+The editor makes it possible to review the Pokémon's training values directly from the party menu and see the resulting stat changes without needing an external tool.
+
+---
+
+## EXP Share Modes
+
+Adds three selectable Experience Point distribution modes.
+
+| Mode | Behavior |
+|---|---|
+| **Off** | Only conscious Pokémon that participated in battle receive experience. |
+| **Classic Even Split** | Default mode. The full experience pool is divided evenly among all conscious Pokémon in the party. |
+| **Modern Progressive** | Participants split the normal 100% experience pool, while conscious Pokémon that did not battle split a second 50% pool. The total is approximately `1.5×`. |
+
+---
+
+<a id="free-master-ball"></a>
+## Free Master Ball + Rare Candy + Evolution Items + Max Repel
+
+Combines the previous free-item shop mods into a single Generation III quality-of-life mod.
+
+### Free Mart Items
+
+The following items are made available through standard Poké Marts for **¥0**:
+
+- **MASTER BALL**;
+- **RARE CANDY**;
+- **MAX REPEL**.
+
+### Evolution Items
+
+The mod also adds access to the supported evolution items through a dedicated **EVOLUTION** shop section.
+
+All supported evolution items are sold for **¥0**, allowing trade- and item-based evolution requirements to be handled without money grinding.
+
+The evolution catalog includes the supported stones and held evolution items used by the game, such as:
+
+- Fire Stone;
+- Water Stone;
+- Thunder Stone;
+- Leaf Stone;
+- Moon Stone;
+- Sun Stone;
+- King's Rock;
+- Metal Coat;
+- Dragon Scale;
+- Up-Grade.
+
+This combines the functionality previously documented as **Free Master Ball + Rare Candy**, **Free Max Repel**, and **Free Evolution Items**.
+
+---
+
+## HM Anywhere
+
+Allows supported Generation III field moves to be used without teaching them to a Pokémon.
+
+You only need to have the corresponding HM in your Bag. Badge requirements for field moves are still respected where applicable.
+
+### Field Move Support
+
+The mod is designed around FireRed's overworld HM actions, including supported uses such as:
+
+- **CUT** — use Cut on valid trees or bushes;
+- **SURF** — enter water from a valid shoreline;
+- **STRENGTH** — activate Strength for movable boulders;
+- **FLASH** — activate Flash where the field effect is supported;
+- **FLY** — open the Fly destination flow;
+- **ROCK SMASH** — break valid rocks;
+- **WATERFALL** — use Waterfall where supported.
+
+The purpose is to preserve normal progression requirements while removing the need to permanently occupy a Pokémon move slot with a field move.
+
+---
+
+## Item Shortcut
+
+Press the default shortcut button in the overworld to open a menu containing five item slots.
+
+### Default Controls
+
+| Action | Keyboard | Controller |
+|---|---|---|
+| Open Shortcut Menu | `I` | `Y` |
+| Use FAST Item | `K` | `X` |
+
+### Slot Actions
+
+Each assigned slot provides the following actions:
+
+- **USE** — immediately uses the assigned item;
+- **SET FAST** — marks the item for quick use;
+- **CLEAR** — removes the item from the slot.
+
+### Assigning an Item
+
+Items are assigned directly from the Bag:
+
+```text
+BAG → Select Item → ASSIGN SHORTCUT → Choose Slot 1–5
+```
+
+One of the five slots can be designated as the **FAST** slot.
+
+Press the assigned **FAST Item** button in the overworld to use that item immediately.
+
+### Control Remapping
+
+Both shortcut buttons can be remapped directly from the **Item Shortcut** menu.
+
+Open the menu using:
+
+- **Keyboard:** `I`
+- **Controller:** `Y`
+
+Then select **OPTIONS** to change the controls.
+
+---
+
+## Modern Bag
+
+
+Transforms the Bag into a modern inventory divided into multiple pockets, navigated with **Left** and **Right**.
+
+It also removes the original 20-item-type capacity limit.
+
+### Available Pockets
+
+| Pocket | Contents |
+|---|---|
+| **FAVORITES** | Any items marked as favorites. Accessible by pressing **Left** from the Medicine pocket. |
+| **MEDICINE** | Potions, status-healing items, Revives, Ether, Elixir, vitamins, PP Ups, and Rare Candies. |
+| **BALLS** | Poké Balls, Great Balls, Ultra Balls, Master Balls, and Balls added by other mods. |
+| **TM HM** | All TMs and HMs. |
+| **BATTLE** | X items, Dire Hit, Guard Spec., and Poké Doll. |
+| **KEY ITEMS** | Bicycle, Fishing Rods, Poké Flute, keys, cards, and other important items. |
+| **OTHER** | Evolution Stones, Repels, Escape Rope, fossils, and general-purpose items. |
+
+### Opening Pocket
+
+A new **Opening Pocket** option lets you choose which Bag pocket is displayed when the Bag is opened.
+
+Available choices:
+
+- **Favorites**
+- **Medicine**
+- **Balls**
+- **TM/HM**
+- **Battle**
+- **Key Items**
+- **Other**
+- **Last Used**
+
+**Medicine** remains the default setting for backwards compatibility.
+
+When **Last Used** is selected, the Bag remembers the pocket you were viewing and automatically reopens on that same pocket the next time.
+
+### Hold Scroll Speed
+
+A new **Hold Scroll Speed** option controls how quickly the item list scrolls while a direction is held.
+
+Available settings:
+
+- **Off**
+- **Normal**
+- **Fast**
+- **Very Fast**
+
+**Fast** is the new default setting.
+
+### Favorites
+
+A new **FAVORITES** pocket has been added.
+
+It can be opened by pressing **Left** from the **MEDICINE** pocket.
+
+Any item can be added to Favorites, and favorite items can be used normally directly from this section.
+
+### Item Options
+
+Press **SELECT** on an item to open the **ITEM OPTIONS** menu:
+
+- **ADD FAVORITE** / **REMOVE FAVORITE**
+- **PIN TO TOP** / **UNPIN ITEM**
+- **MOVE ITEM**
+- **CANCEL**
+
+### Pinned Items
+
+Pinned items:
+
+- always remain at the top of their category;
+- are not moved by alphabetical sorting;
+- preserve the order in which they were pinned;
+- remain pinned after closing and reopening the game.
+
+### Indicators
+
+The following indicators may appear next to an item's quantity:
+
+| Indicator | Meaning |
+|---|---|
+| `F` | Favorite |
+| `P` | Pinned to the top |
+| `PF` | Favorite and pinned |
+
+Favorite and pinned settings remain saved even when an item's quantity reaches zero.
+
+When the item is obtained again, it automatically returns with the same settings.
+
+### Automatic Sorting
+
+Items are sorted automatically whenever the Bag is opened.
+
+The sorting order is based on:
+
+1. pocket;
+2. pinned-item order;
+3. item name.
+
+TMs and HMs are sorted numerically, with HMs listed before TMs.
+
+The automatic sorting is refreshed whenever you obtain a new type of item.
+
+Manual reordering remains available through **SELECT → ITEM OPTIONS → MOVE ITEM** during the current play session.
+
+### Quick Search
+
+Press **START** while inside any standard Bag pocket to open the general search screen.
+
+#### Controls
+
+- **D-pad** — move across the on-screen keyboard;
+- **A** — enter a character;
+- **B** — delete a character or exit;
+- **SELECT** — clear the current search;
+- **START** or **GO** — display the search results.
+
+The search checks every Bag pocket.
+
+Selecting a result automatically returns you to the correct pocket with the matching item highlighted.
+
+The search also correctly recognizes item names containing special characters, such as **POKé BALL**.
+
+### TM/HM Search, Filters, and Sorting
+
+While inside the **TM HM** pocket, press **START** to open a dedicated panel.
+
+The panel provides the following options:
+
+- **NAME** — search by move name, not only by TM or HM number;
+- **TYPE** — filter by move type, including Fire, Water, Grass, Electric, Psychic, and others;
+- **CLASS** — filter moves by category:
+  - **PHYSICAL**
+  - **SPECIAL**
+  - **STATUS**
+- **SORT** — choose one of the following sorting methods:
+  - **Machine Number**
+  - **Move Name**
+  - **Power High to Low**
+  - **Power Low to High**
+
+All filters can be combined.
+
+### TM/HM Move Information
+
+With a TM or HM highlighted, press:
+
+- **Controller:** `Y`
+- **Keyboard:** `I`
+
+The information screen displays:
+
+- TM or HM number;
+- move name;
+- type;
+- Physical, Special, or Status class;
+- power;
+- accuracy;
+- PP;
+- move effect.
+
+---
+
+## Move Learn Stats
+
+
+When a Pokémon already knows four moves and must forget one to learn a new move, the lower panel displays two comparison columns.
+
+### SELECTED
+
+Shows the currently highlighted move that would be forgotten:
+
+- move name;
+- **POWER**;
+- maximum **PP**.
+
+### LEARNING
+
+Shows the new move the Pokémon is about to learn:
+
+- move name;
+- **POWER**;
+- maximum **PP**.
+
+---
+
+## Moves Manager
+
+Adds a **MOVES** option to each party Pokémon's submenu.
+
+### Main Page
+
+Displays:
+
+- the four currently known moves;
+- current and maximum PP;
+- any empty move slots;
+- move reordering with **SELECT**.
+
+### Technical Pages
+
+Each move has three information pages containing:
+
+- type and physical, special, or status category;
+- power and accuracy;
+- PP, maximum PP, and PP Ups;
+- priority;
+- increased critical-hit probability;
+- effect and effect type;
+- fixed damage;
+- number of hits;
+- Counter compatibility;
+- charging turns;
+- semi-invulnerability;
+- index;
+- internal identifier;
+- animation.
+
+### Replacing Moves
+
+Press `A` on a move's technical page to choose a replacement from the Pokémon's move memory.
+
+The initial move memory is rebuilt using:
+
+- currently known moves;
+- starting moves from the evolutionary line;
+- level-up moves learned up to the Pokémon's current level.
+
+---
+
+## Nickname Changer
+
+Adds a new renaming option directly to the standard **POKéMON** menu.
+
+When selecting a Pokémon, the submenu now includes:
+
+```text
+STATS → RENAME → SWITCH
+```
+
+### Features
+
+- Change a Pokémon's nickname directly from the party menu.
+- Nicknames can contain up to **10 characters**.
+
+---
+
+## Pokédex Plus
+
+Pokédex Plus replaces the original Pokédex with a more complete and practical version.
+
+For each Pokémon, it allows you to view general information, base stats, habitats, encounter rates, evolutions, and moves learned by leveling up.
+
+### Features
+
+- Caught Pokémon indicator.
+- Automatic scanning of the current party and every PC Box.
+- **STATS** tab showing type, base stats, and total base stat value.
+- **HABITAT** tab showing areas, encounter methods, levels, and encounter rates.
+- Direct access to the area map.
+- **EVOLUTION** tab showing the evolution chain and evolution method.
+- **LEVEL MOVES** tab showing moves learned by level and their details.
+- Quick search by pressing **START**.
+- Search Pokémon by name or type.
+- Compatibility with Pokémon and encounters added by other mods.
+
+---
+
+## PokéCenter Max Happiness
+
+Automatically maximizes the happiness of every Pokémon in the party whenever the team is healed normally at a Pokémon Center.
+
+### How It Works
+
+1. Heal your party normally at a Pokémon Center.
+2. Immediately after the healing process is completed, every Pokémon currently in the party is set to **255 happiness**.
+
+---
+
+## Trade Evolution Fix
+
+Removes the need to trade Pokémon in order to complete supported trade evolutions.
+
+Affected trade-only evolutions are replaced with direct in-game evolution requirements so they can be completed in a single-player FireRed save without using another game or console.
+
+Where the mod uses level-based replacements, the Pokémon evolves normally once the configured level requirement is reached.
+
+---
+
+## Repel Reuse
+
+When a Repel's effect expires, a choice is displayed automatically:
+
+- **YES** — immediately consumes and activates another Repel;
+- **NO** — continues without using another Repel.
+
+The prompt is not displayed when no Repels remain in the Bag.
+
+### Repel Selection Priority
+
+The mod first attempts to use the same type of Repel that just expired. If none remain, it automatically selects one in this order:
+
+1. **MAX REPEL**
+2. **SUPER REPEL**
+3. **REPEL**
+
+---
+
+## Reusable Machines
+
+Improves how TMs and HMs work:
+
+- TMs are no longer consumed when teaching a move;
+- HM moves can be forgotten;
+- the move assigned to each TM or HM is displayed directly in the Bag.
+
+---
+
+## Stable Menu Navigation - Gen 3
+
+Keeps menu navigation speed stable and independent from the game's speed setting.
+
+When the game speed is increased, cursor movement and directional navigation inside menus remain consistent, making menu controls easier and more precise at higher game speeds.
+
+---
+
+## Summon
+
+Adds a **SUMMON** option to the Start menu.
+
+It allows you to enter a Pokédex number and immediately begin a normal wild encounter with the corresponding Pokémon.
+
+### Usage
+
+1. Select **SUMMON**.
+2. Enter the Pokédex number.
+3. Check the Pokémon name displayed in the window.
+4. Select **OK**.
+5. Begin the wild encounter.
+
+---
+
+## Universal Free TM Shop
+
+
+Speaking to the clerk in any Poké Mart opens a new menu with the following options:
+
+- **NORMAL SHOP** — opens the Mart's original item catalog;
+- **TM SHOP** — opens a catalog containing every TM from TM01 to TM50;
+- **LEAVE** — closes the shop menu.
+
+### TM Shop Features
+
+- TMs are sorted numerically.
+- Each entry also displays the move contained in the TM.
+- Every TM is sold for `0`.
+
+---
+
+<a id="disable_help_lr"></a>
+## disable_help_LR
+
+Disables FireRed's built-in **L/R Help** shortcut.
+
+This prevents the contextual Help screen from opening when the shoulder buttons are pressed, reducing accidental interruptions and leaving **L** and **R** available for modern menu navigation or other mod controls.
+
+---
+
+# ART Mods
+
+---
+
+## Modern Battle UI
+
+
+A complete overhaul of the battle interface, redesigned to provide a more modern, readable, and information-rich battle experience.
+
+### Main Features
+
+- **Completely redesigned battle HUD** with floating panels for the player's Pokémon and the opponent.
+- Modern HP bars, level display, status information, and improved readability.
+- **Fully redesigned command menu** with a true horizontal layout:
+
+```text
+FIGHT → BAG → POKéMON → RUN
+```
+
+### Modern FIGHT Menu
+
+The **FIGHT** menu now displays:
+
+- move name;
+- PP;
+- type;
+- power;
+- accuracy;
+- additional move information.
+
+It also shows the move's effectiveness against the current opposing Pokémon directly in the menu:
+
+- **SUPER x4**
+- **SUPER x2**
+- **NORMAL x1**
+- **RESIST x0.5**
+- **RESIST x0.25**
+- **NO EFFECT**
+
+### Modern Party UI
+
+The in-battle Party screen has been completely redesigned.
+
+It uses a more efficient layout with:
+
+- a compact Pokémon list on the left;
+- a detailed information panel on the right.
+
+The selected Pokémon panel immediately displays:
+
+- icon;
+- name;
+- type;
+- level;
+- status;
+- HP;
+- main stats;
+- moves.
+
+The interface also analyzes the selected Pokémon's moves against the current opponent, allowing you to immediately identify the most effective options.
+
+A **BEST OPTION** indicator highlights the move with the strongest matchup against the current enemy.
+
+### Modern Battle Bag
+
+The in-battle Bag has also been redesigned with:
+
+- an item list on the left;
+- a complete item information panel on the right.
+
+The Bag displays:
+
+- item icon;
+- item name;
+- category;
+- quantity;
+- description.
+
+---
+
+## Modern UI Gen 3
+
+Improves the game's interface with a more modern, cleaner, and more readable design.
+
+The mod refreshes the visual presentation of the game UI while preserving the original gameplay flow, making menus and interface elements easier to read and more pleasant to use.
+
+---
+
+# Debugging
+
+---
+
+## Performance Monitor
+
+
+A diagnostic tool designed to capture detailed performance data when you encounter lag in a specific area, menu, or battle.
+
+### How to Use
+
+Go to the area, menu, or battle where you notice performance issues and press **F8**.
+
+The monitor records performance data for **10 seconds** and then automatically exports:
+
+```text
+performance_report_latest.json
+```
+
+It also creates a human-readable version:
+
+```text
+performance_report_latest.txt
+```
+
+After the test, you can press **F9** at any time to export the latest report again.
+
+### Report Contents
+
+The exported report includes:
+
+- every **frame time** recorded during the 10-second capture;
+- real FPS;
+- average frame time;
+- median frame time;
+- **P95** and **P99** frame times;
+- **1% low**;
+- worst frame;
+- number of frames exceeding the **16.67 ms** frame budget;
+- number of frames above **18.5 ms**;
+- number of frames above **33.3 ms**;
+- every individual **slow frame**, including the exact time when it occurred;
+- active map and screen at the time of the slow frame;
+- the mod consuming the most CPU during that frame;
+- second, third, and fourth highest contributors;
+- **Deep Lua Profiler** results;
+- exact performance hotspot, for example:
+  - `main.lua:428`
+  - `render.hud`
+  - a quest callback
+  - other exact Lua hotspots;
+- exclusive CPU usage for each mod;
+- worst callback for each mod;
+- calls per second;
+- draw calls generated by each mod;
+- canvas switches;
+- shader switches;
+- Lua RAM usage;
+- texture memory usage;
+- performance trends sampled every **0.25 seconds**;
+- real Logic Steps;
+- complete list of loaded mods;
+- **exact version of every mod**;
+- priority;
+- dependencies;
+- load order.
+
+### Export Location
+
+Reports are exported to:
+
+```text
+AppData\Roaming\pokemon-love2d\mod_storage\
+```
+
+---
+
+## Download
+
+Download all Gen 3 mods from the official repository:
+
+**[github.com/FAFF0x/gen3recomp](https://github.com/FAFF0x/gen3recomp)**
